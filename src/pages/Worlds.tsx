@@ -48,7 +48,16 @@ const Worlds = () => {
         <button onClick={() => navigate("/")} className="font-heading font-bold text-foreground text-lg bg-transparent border-none cursor-pointer hover:text-primary transition-colors">
           SQ
         </button>
-        <span className="text-muted-foreground text-xs font-mono">worlds://index</span>
+        <div className="flex items-center gap-4">
+          <button
+            onClick={() => navigate("/random")}
+            className="text-xs font-mono border border-border px-3 py-1.5 text-muted-foreground bg-transparent cursor-pointer hover:border-primary hover:text-primary transition-all duration-200 flex items-center gap-1.5"
+          >
+            <span>🎲</span>
+            <span>RANDOM QUEST</span>
+          </button>
+          <span className="text-muted-foreground text-xs font-mono">worlds://index</span>
+        </div>
       </header>
 
       <main className="max-w-4xl mx-auto px-6 py-12">
