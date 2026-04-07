@@ -15,6 +15,7 @@ const worlds: WorldCard[] = [
   { id: "study", name: "Study World", emoji: "📚", description: "Learn something new every day.", active: true, path: "/worlds/study" },
   { id: "social", name: "Social World", emoji: "🤝", description: "Build connections, grow your network.", active: true, path: "/worlds/social" },
   { id: "creative", name: "Creative World", emoji: "🎨", description: "Express yourself through creation.", active: true, path: "/worlds/creative" },
+  { id: "communication", name: "Communication World", emoji: "💬", description: "Master the art of communication.", active: true, path: "/worlds/communication" },
 ];
 
 const getProgress = (worldId: string): { done: number; total: number } => {
@@ -68,8 +69,8 @@ const Worlds = () => {
                 className={`animate-fade-up animate-fade-up-delay-${i + 1} relative group ${
                   world.active ? "cursor-pointer" : "cursor-not-allowed"
                 } p-5 flex flex-col gap-3 border transition-all duration-300 ease-in-out
-                hover:scale-[1.03] hover:-translate-y-2 ${isFlashing ? "world-click-flash" : ""
-                } ${world.active
+                hover:scale-[1.03] hover:-translate-y-2 ${isFlashing ? "world-click-flash" : ""}
+                ${world.active
                   ? "border-border bg-card hover:border-primary hover:shadow-[0_8px_25px_hsl(var(--primary)/0.2)]"
                     : "border-border bg-card opacity-50 blur-[0.3px]"
                 }`}
