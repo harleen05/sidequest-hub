@@ -28,9 +28,9 @@ const QuickStart = () => {
   ];
 
   return (
-    <div className="min-h-screen grid-bg">
+    <div className="fixed inset-0 flex flex-col grid-bg">
       {/* Header */}
-      <header className="border-b border-border px-6 py-4 flex items-center justify-between">
+      <header className="border-b border-border px-6 py-4 flex items-center justify-between bg-background z-10 sticky top-0">
         <button
           onClick={() => navigate("/")}
           className="font-heading font-bold text-foreground text-lg bg-transparent border-none cursor-pointer hover:text-primary transition-colors"
@@ -41,9 +41,8 @@ const QuickStart = () => {
       </header>
 
       {/* Main Content */}
-      <main className="max-w-4xl mx-auto px-6 py-12">
-        <div className="space-y-16 animate-fade-up">
-
+      <main className="flex-1 overflow-auto w-full">
+        <div className="max-w-4xl mx-auto px-6 py-12 space-y-16 animate-fade-up">
           {/* Header section */}
           <div className="text-center space-y-4">
             <h1 className="text-4xl md:text-5xl font-heading font-bold text-foreground tracking-tight">

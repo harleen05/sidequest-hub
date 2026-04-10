@@ -28,6 +28,7 @@ const QuestList = ({ worldId, worldEmoji, quests }: QuestListProps) => {
   const [animating, setAnimating] = useState<string | null>(null);
   const [flashId, setFlashId] = useState<string | null>(null);
   const [progressGlow, setProgressGlow] = useState(false);
+  const [search, setSearch] = useState("");
 
   useEffect(() => {
     localStorage.setItem(storageKey, JSON.stringify(state));
@@ -59,6 +60,9 @@ const QuestList = ({ worldId, worldEmoji, quests }: QuestListProps) => {
   const completed = Object.values(state).filter(Boolean).length;
   const total = quests.length;
   const pct = total > 0 ? (completed / total) * 100 : 0;
+  const filteredQuests = quests.filter((q) =>
+  q.title.toLowerCase().includes(search.toLowerCase())
+);
 
   return (
     <div className="space-y-6">
@@ -115,14 +119,30 @@ const QuestList = ({ worldId, worldEmoji, quests }: QuestListProps) => {
         </div>
       </div>
 
+      <div className="panel p-3 animate-fade-up">
+         <input
+          type="text"
+          placeholder="Search quests..."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          className="w-full px-3 py-2 text-sm font-mono bg-transparent border border-border focus:outline-none focus:border-accent"
+        />
+      </div>
+
+
+
+
       {/* Quest items */}
-      {quests.length === 0 ? (
+      {filteredQuests.length === 0 ? (
         <div className="panel p-8 text-center animate-fade-up">
-          <p className="text-muted-foreground text-sm font-mono">No quests available.</p>
+          <p className="text-muted-foreground text-sm font-mono">
+          {search ? "No quests found." : "No quests available."}
+</p>
         </div>
       ) : (
         <div className="space-y-1">
-          {quests.map((quest, i) => {
+          {filteredQuests.map((quest, i) => {
+
             const done = state[quest.id];
             const isAnimating = animating === quest.id;
             const isFlashing = flashId === quest.id;
