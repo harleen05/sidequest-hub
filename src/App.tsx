@@ -12,6 +12,7 @@ import FinanceWorld from "./pages/FinanceWorld";
 import QuickStart from "./pages/QuickStart";
 import RandomQuest from "./pages/RandomQuest";
 
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -26,8 +27,7 @@ const App = () => (
         <Route path="/worlds/social" element={<SocialWorld />} />
         <Route path="/worlds/creative" element={<CreativeWorld />} />
 
-        <Route path="/random" element={<RandomQuest />} />
-        <Route path="/about" element={<About />} />
+
         <Route path="*" element={<NotFound />} />
         <Route path="/worlds/outdoor" element={<OutdoorWorld />} />
         <Route path="/worlds/health" element={<HealthWorld/>} />

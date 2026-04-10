@@ -92,9 +92,7 @@ const Worlds = () => {
           >
             🎲 Random Quest
           </button>
-          <span className="text-muted-foreground text-xs font-mono">
-            worlds://index
-          </span>
+
         </div>
       </header>
 
