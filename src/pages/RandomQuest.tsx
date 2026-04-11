@@ -5,7 +5,8 @@ import { studyQuests } from "@/data/studyQuests";
 import { socialQuests } from "@/data/socialQuests";
 import { creativeQuests } from "@/data/creativeQuests";
 
-
+type QuestWithWorld = {
+   id: string;
   title: string;
   world: string;
   emoji: string;
