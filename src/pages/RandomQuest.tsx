@@ -5,11 +5,13 @@ import { studyQuests } from "@/data/studyQuests";
 import { socialQuests } from "@/data/socialQuests";
 import { creativeQuests } from "@/data/creativeQuests";
 
+type QuestWithWorld = {
+   id: string;
   title: string;
   world: string;
   emoji: string;
   worldId: string;
-}
+};
 
 const allQuests: QuestWithWorld[] = [
   ...fitnessQuests.map((q) => ({ ...q, world: "Fitness World", emoji: "🏋️", worldId: "fitness" })),
@@ -84,11 +86,9 @@ const RandomQuest = () => {
         >
           {quest ? (
             <>
-
-              </div>
-              <p className="text-xl font-heading font-semibold text-foreground leading-snug">
-                {quest.title}
-              </p>
+  <p className="text-xl font-heading font-semibold text-foreground leading-snug">
+    {quest.title}
+  </p>
               {done && (
                 <span className="text-xs font-mono text-primary animate-fade-up">
                   ✓ quest marked as complete

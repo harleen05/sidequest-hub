@@ -11,6 +11,15 @@ import CreativeWorld from "./pages/CreativeWorld";
 import FinanceWorld from "./pages/FinanceWorld";
 import QuickStart from "./pages/QuickStart";
 import RandomQuest from "./pages/RandomQuest";
+import About from "./pages/About";
+import MindfulnessWorld from "@/pages/MindfulnessWorld";
+import OutdoorWorld from "@/pages/OutdoorWorld";
+import HealthWorld from "@/pages/HealthWorld";
+import FunWorld from "@/pages/FunWorld";
+import AudioWorld from "@/pages/AudioWorld";
+
+
+
 
 
 const queryClient = new QueryClient();
@@ -27,11 +36,11 @@ const App = () => (
         <Route path="/worlds/social" element={<SocialWorld />} />
         <Route path="/worlds/creative" element={<CreativeWorld />} />
 
-
         <Route path="*" element={<NotFound />} />
         <Route path="/worlds/outdoor" element={<OutdoorWorld />} />
         <Route path="/worlds/health" element={<HealthWorld/>} />
         <Route path="/worlds/fun" element={<FunWorld />} />
+        <Route path="/worlds/audio" element={<AudioWorld />} />
       </Routes>
     </BrowserRouter>
   </QueryClientProvider>
