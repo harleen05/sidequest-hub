@@ -3,6 +3,7 @@ import type { Quest, Difficulty } from "@/data/fitnessQuests";
 
 interface QuestListProps {
   worldId: string;
+  worldName: string;
   worldEmoji: string;
   quests: Quest[];
 }
