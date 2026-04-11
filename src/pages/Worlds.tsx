@@ -26,6 +26,7 @@ const worlds: WorldCard[] = [
   { id: "outdoor", name: "Outdoor World", emoji: "🌿", description: "Explore and connect with nature.", active: true, path: "/worlds/outdoor" },
   { id: "health", name: "Health World", emoji: "🧠", description: "Improve your mental and physical wellbeing.", active: true, path: "/worlds/health" },
   { id: "fun", name: "Fun World", emoji: "🎮", description: "Relax, play, and enjoy life.", active: true, path: "/worlds/fun" },
+  { id: "adventure", name: "Adventure World", emoji: "🧭", description: "Try something new today.", active: true, path: "/worlds/adventure" },
 
   { id: "home", name: "Home World", emoji: "🏠", description: "Build better habits and routines at home.", active: true, path: "/worlds/home" },
   { id: "detox", name: "Detox World", emoji: "🌿", description: "Disconnect, reset, and reclaim your focus.", active: true, path: "/worlds/detox" },

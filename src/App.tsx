@@ -16,6 +16,7 @@ import MindfulnessWorld from "@/pages/MindfulnessWorld";
 import OutdoorWorld from "@/pages/OutdoorWorld";
 import HealthWorld from "@/pages/HealthWorld";
 import FunWorld from "@/pages/FunWorld";
+import AdventureWorld from "@/pages/AdventureWorld";
 import AudioWorld from "@/pages/AudioWorld";
 import ProblemSolvingWorld from "@/pages/ProblemSolvingWorld";
 import HomeWorld from "@/pages/HomeWorld";
@@ -44,6 +45,7 @@ const App = () => (
         <Route path="/worlds/outdoor" element={<OutdoorWorld />} />
         <Route path="/worlds/health" element={<HealthWorld/>} />
         <Route path="/worlds/fun" element={<FunWorld />} />
+        <Route path="/worlds/adventure" element={<AdventureWorld />} />
         <Route path="/worlds/audio" element={<AudioWorld />} />
         <Route path="/worlds/problem-solving" element={<ProblemSolvingWorld />} />
         <Route path="/worlds/home" element={<HomeWorld />} />
