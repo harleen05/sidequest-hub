@@ -38,7 +38,10 @@ const App = () => (
         <Route path="/worlds/study" element={<StudyWorld />} />
         <Route path="/worlds/social" element={<SocialWorld />} />
         <Route path="/worlds/creative" element={<CreativeWorld />} />
-
+        <Route path="/worlds/mindfulness" element={<MindfulnessWorld />} />
+        <Route path="/worlds/finance" element={<FinanceWorld />} />
+        <Route path="/random" element={<RandomQuest />} />
+        <Route path="/about" element={<About />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/worlds/outdoor" element={<OutdoorWorld />} />
         <Route path="/worlds/health" element={<HealthWorld/>} />
