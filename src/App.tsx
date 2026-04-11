@@ -17,6 +17,9 @@ import OutdoorWorld from "@/pages/OutdoorWorld";
 import HealthWorld from "@/pages/HealthWorld";
 import FunWorld from "@/pages/FunWorld";
 import AudioWorld from "@/pages/AudioWorld";
+import HomeWorld from "@/pages/HomeWorld";
+import DetoxWorld from "@/pages/DetoxWorld";
+import CommunicationWorld from "@/pages/CommunicationWorld";
 
 
 
@@ -41,6 +44,9 @@ const App = () => (
         <Route path="/worlds/health" element={<HealthWorld/>} />
         <Route path="/worlds/fun" element={<FunWorld />} />
         <Route path="/worlds/audio" element={<AudioWorld />} />
+        <Route path="/worlds/home" element={<HomeWorld />} />
+        <Route path="/worlds/detox" element={<DetoxWorld />} />
+        <Route path="/worlds/communication" element={<CommunicationWorld />} />
       </Routes>
     </BrowserRouter>
   </QueryClientProvider>
