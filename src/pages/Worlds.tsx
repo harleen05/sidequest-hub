@@ -22,6 +22,11 @@ const worlds: WorldCard[] = [
   { id: "health", name: "Health & Nutrition World", emoji: "🥗", description: "Build small daily habits for a healthier diet.", active: true, path: "/worlds/health" },
   { id: "fun", name: "Fun & Play World", emoji: "🎉", description: "Relax, enjoy, and have fun while staying active.", active: true, path: "/worlds/fun" },
   { id: "audio", name: "Audio & Learning World", emoji: "🎧", description: "Turn passive listening into active learning.", active: true, path: "/worlds/audio" },
+  { id: "problem-solving", name: "Problem Solving World", emoji: "🧠", description: "Sharpen your thinking with daily mental challenges.", active: true, path: "/worlds/problem-solving" },
+  { id: "outdoor", name: "Outdoor World", emoji: "🌿", description: "Explore and connect with nature.", active: true, path: "/worlds/outdoor" },
+  { id: "health", name: "Health World", emoji: "🧠", description: "Improve your mental and physical wellbeing.", active: true, path: "/worlds/health" },
+  { id: "fun", name: "Fun World", emoji: "🎮", description: "Relax, play, and enjoy life.", active: true, path: "/worlds/fun" },
+
   { id: "home", name: "Home World", emoji: "🏠", description: "Build better habits and routines at home.", active: true, path: "/worlds/home" },
   { id: "detox", name: "Detox World", emoji: "🌿", description: "Disconnect, reset, and reclaim your focus.", active: true, path: "/worlds/detox" },
   { id: "communication", name: "Communication World", emoji: "💬", description: "Level up how you connect and express yourself.", active: true, path: "/worlds/communication" },
